@@ -327,9 +327,6 @@
     "db_num",
     "db_len",
     "dbs",
-    "start",
-    "end",
-    "search",
     "hits"
   ]
 }
