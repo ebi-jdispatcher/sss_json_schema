@@ -1,0 +1,335 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/biomadeira/sss_json_schema/blob/main/sss_schema.json",
+  "title": "SSS JSON Schema",
+  "description": "Sequence Similarity Search JSON Schema for EBI's Job Dispatcher",
+  "type": "object",
+  "properties": {
+    "program": {
+      "$comment": "Information about executed program",
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "command": {
+      "type": "string"
+    },
+    "query_def": {
+      "$comment": "Information about query sequence",
+      "type": "string"
+    },
+    "query_stype": {
+      "type": "string"
+    },
+    "query_db": {
+      "type": "string"
+    },
+    "query_id": {
+      "type": "string"
+    },
+    "query_acc": {
+      "type": "string"
+    },
+    "query_desc": {
+      "type": "string"
+    },
+    "query_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "query_uni_os": {
+      "type": "string"
+    },
+    "query_uni_ox": {
+      "type": "string"
+    },
+    "query_uni_gn": {
+      "type": "string"
+    },
+    "query_uni_pe": {
+      "type": "string"
+    },
+    "query_uni_sv": {
+      "type": "string"
+    },
+    "query_seq": {
+      "type": "string"
+    },
+    "query_len": {
+      "type": "number"
+    },
+    "db_count": {
+      "$comment": "Information about database",
+      "type": "number"
+    },
+    "db_num": {
+      "type": "number"
+    },
+    "db_len": {
+      "type": "number"
+    },
+    "dbs": {
+      "type": "array",
+      "contains": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "stype": {
+            "type": "string"
+          },
+          "created": {
+            "$comment": "Specific EBI datetime format",
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "stype"
+        ]
+      }
+    },
+    "alignments": {
+      "$comment": "Information about tool options",
+      "type": "number"
+    },
+    "scores": {
+      "type": "number"
+    },
+    "dbrange": {
+      "type": "string"
+    },
+    "expect_upper": {
+      "$comment": "Custom EBI scientific notation format",
+      "type": "number"
+    },
+    "expect_lower": {
+      "$comment": "Custom EBI scientific notation format",
+      "type": "number"
+    },
+    "filter": {
+      "type": "string"
+    },
+    "gap_extend": {
+      "type": "number"
+    },
+    "gap_open": {
+      "type": "number"
+    },
+    "histogram": {
+      "type": "boolean"
+    },
+    "ktup": {
+      "type": "number"
+    },
+    "matrix": {
+      "type": "string"
+    },
+    "statistics": {
+      "type": "string"
+    },
+    "strand": {
+      "type": "string"
+    },
+    "start": {
+      "$comment": "Information search execution times - Custom EBI datetime format",
+      "type": "string"
+    },
+    "end": {
+      "type": "string"
+    },
+    "search": {
+      "type": "string"
+    },
+    "hits": {
+      "$comment": "Information about the search Hits",
+      "type": "array",
+      "contains": {
+        "type": "object",
+        "properties": {
+          "hit_num": {
+            "$comment": "Information about hit sequence",
+            "type": "number"
+          },
+          "hit_def": {
+            "type": "string"
+          },
+          "hit_db": {
+            "type": "string"
+          },
+          "hit_id": {
+            "type": "string"
+          },
+          "hit_acc": {
+            "type": "string"
+          },
+          "hit_desc": {
+            "type": "string"
+          },
+          "hit_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "hit_xref_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "hit_uni_de": {
+            "type": "string"
+          },
+          "hit_uni_os": {
+            "type": "string"
+          },
+          "hit_uni_ox": {
+            "type": "string"
+          },
+          "hit_uni_gn": {
+            "type": "string"
+          },
+          "hit_uni_pe": {
+            "type": "string"
+          },
+          "hit_uni_sv": {
+            "type": "string"
+          },
+          "hit_seq": {
+            "type": "string"
+          },
+          "hit_len": {
+            "type": "number"
+          },
+          "hit_hsps": {
+            "$comment": "There can be multiple HSPs (high-scoring segments) per hit sequence",
+            "type": "array",
+            "contains": {
+              "type": "object",
+              "properties": {
+                "hsp_num": {
+                  "$comment": "Information to pairwise alignments",
+                  "type": "number"
+                },
+                "hsp_score": {
+                  "type": "number"
+                },
+                "hsp_sw_score": {
+                  "type": "number"
+                },
+                "hsp_initn": {
+                  "type": "number"
+                },
+                "hsp_init1": {
+                  "type": "number"
+                },
+                "hsp_opt": {
+                  "type": "number"
+                },
+                "hsp_zscore": {
+                  "type": "number"
+                },
+                "hsp_bit_score": {
+                  "type": "number"
+                },
+                "hsp_expect": {
+                  "$comment": "Custom EBI scientific notation format",
+                  "type": "number"
+                },
+                "hsp_align_len": {
+                  "type": "number"
+                },
+                "hsp_identity": {
+                  "type": "number"
+                },
+                "hsp_positive": {
+                  "type": "number"
+                },
+                "hsp_gaps": {
+                  "type": "number"
+                },
+                "hsp_query_frame": {
+                  "type": "string"
+                },
+                "hsp_hit_frame": {
+                  "type": "string"
+                },
+                "hsp_strand": {
+                  "type": "string"
+                },
+                "hsp_frame": {
+                  "type": "number"
+                },
+                "hsp_query_from": {
+                  "type": "number"
+                },
+                "hsp_query_to": {
+                  "type": "number"
+                },
+                "hsp_query_display_from": {
+                  "type": "number"
+                },
+                "hsp_hit_from": {
+                  "type": "number"
+                },
+                "hsp_hit_to": {
+                  "type": "number"
+                },
+                "hsp_hit_display_from": {
+                  "type": "number"
+                },
+                "hsp_qseq": {
+                  "$comment": "query, hit and midline sequences",
+                  "type": "string"
+                },
+                "hsp_mseq": {
+                  "type": "string"
+                },
+                "hsp_hseq": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "hsp_num",
+                "hsp_score",
+                "hsp_query_from",
+                "hsp_query_to",
+                "hsp_hit_from",
+                "hsp_hit_to",
+                "hsp_qseq",
+                "hsp_mseq",
+                "hsp_hseq"
+              ]
+            }
+          }
+        },
+        "required": [
+          "hit_num",
+          "hit_def",
+          "hit_db",
+          "hit_id",
+          "hit_acc",
+          "hit_desc",
+          "hit_url",
+          "hit_xref_url",
+          "hit_len",
+          "hit_hsps"
+        ]
+      }
+    }
+  },
+  "required": [
+    "program",
+    "version",
+    "command",
+    "query_def",
+    "query_len",
+    "db_count",
+    "db_num",
+    "db_len",
+    "dbs",
+    "start",
+    "end",
+    "search",
+    "hits"
+  ]
+}
