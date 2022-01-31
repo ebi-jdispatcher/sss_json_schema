@@ -1,5 +1,5 @@
 # SSS JSON Schema
-This is a *WIP* [JSON schema](https://json-schema.org/) for standardising EMBL-EBI's Job Dispatcher Sequence Similarity Search (SSS) outputs. A list of tools provided at EMBL-EBI is provided [here](https://www.ebi.ac.uk/seqdb/confluence/display/JDSAT/Sequence+Similarity+Search).
+This is a *WIP* [JSON schema](https://json-schema.org/) for standardising EMBL-EBI's Job Dispatcher Sequence Similarity Search (SSS) outputs. A list of tools available at EMBL-EBI that generate these outputs is provided [here](https://www.ebi.ac.uk/seqdb/confluence/display/JDSAT/Sequence+Similarity+Search).
 
 ## Validating an output against the SSS JSON schema
 
