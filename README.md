@@ -11,7 +11,7 @@ The first properties the schema should provide are a quick overview of the execu
   "command": "blastp -db 'uniprotkb_swissprot' -query input.sequence -outfmt 11 -out output.archive -matrix BLOSUM62 -max_target_seqs 50 -evalue 10 -gapopen 11 -gapextend 1"
 ```
 
-This is followed by information about the query sequence, including, database identifier (ID), sequence ID and sequence accession, and some special parsed attributes available for some sequence providers (currently only `query_uni_*` attributes are supported for UniProtKB sequences). Example:
+This is followed by information about the query sequence, including, database identifier (ID), sequence ID, sequence accession, taxonomy information (if available) and some special parsed attributes available for some sequence providers (currently only `query_uni_*` attributes are supported for UniProtKB sequences). Example:
 ```json lines
     "query_def": "sp|P35858|ALS_HUMAN Insulin-like growth factor-binding protein complex acid labile subunit OS=Homo sapiens GN=IGFALS PE=1 SV=1",
     "query_db": "SP",
@@ -20,6 +20,7 @@ This is followed by information about the query sequence, including, database id
     "query_desc": "Insulin-like growth factor-binding protein complex acid labile subunit OS=Homo sapiens GN=IGFALS PE=1 SV=1",
     "query_url": "https://www.uniprot.org/uniprot/P35858",
     "query_uni_de": "Insulin-like growth factor-binding protein complex acid labile subunit",
+    "query_os": "Homo sapiens",    
     "query_uni_os": "Homo sapiens",
     "query_uni_gn": "IGFALS",
     "query_uni_pe": "1",
@@ -71,6 +72,7 @@ The next main required object properties are the `hits` list. Each search hit ha
             "hit_acc": "P35858",
             "hit_desc": "Insulin-like growth factor-binding protein complex acid labile subunit OS=Homo sapiens OX=9606 GN=IGFALS PE=1 SV=1",
             "hit_url": "https://www.uniprot.org/uniprot/P35858",
+            "hit_os": "Homo sapiens",
             "hit_xref_url": "https://www.ebi.ac.uk/ebisearch/search.ebi?db=uniprot&query=P35858",
             "hit_uni_de": "Insulin-like growth factor-binding protein complex acid labile subunit",
             "hit_uni_os": "Homo sapiens",

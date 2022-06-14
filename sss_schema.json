@@ -38,6 +38,9 @@
       "type": "string",
       "format": "uri"
     },
+    "query_os": {
+      "type": "string"
+    },
     "query_uni_os": {
       "type": "string"
     },
@@ -171,6 +174,9 @@
           "hit_url": {
             "type": "string",
             "format": "uri"
+          },
+          "hit_os": {
+            "type": "string"
           },
           "hit_xref_url": {
             "type": "string",
@@ -311,6 +317,7 @@
           "hit_desc",
           "hit_url",
           "hit_xref_url",
+          "hit_os",
           "hit_len",
           "hit_hsps"
         ]
