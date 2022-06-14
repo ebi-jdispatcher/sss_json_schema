@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://github.com/biomadeira/sss_json_schema/blob/main/sss_schema.json",
+  "$id": "https://github.com/ebi-wp/sss_json_schema/blob/main/sss_schema.json",
   "title": "SSS JSON Schema",
   "description": "Sequence Similarity Search JSON Schema for EBI's Job Dispatcher",
   "type": "object",
