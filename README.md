@@ -19,8 +19,8 @@ This is followed by information about the query sequence, including, database id
     "query_acc": "P35858",
     "query_desc": "Insulin-like growth factor-binding protein complex acid labile subunit OS=Homo sapiens GN=IGFALS PE=1 SV=1",
     "query_url": "https://www.uniprot.org/uniprot/P35858",
+    "query_os": "Homo sapiens",
     "query_uni_de": "Insulin-like growth factor-binding protein complex acid labile subunit",
-    "query_os": "Homo sapiens",    
     "query_uni_os": "Homo sapiens",
     "query_uni_gn": "IGFALS",
     "query_uni_pe": "1",
@@ -64,7 +64,7 @@ Next, as an option, we can provide start and end time stamps, as well as a time 
 The next main required object properties are the `hits` list. Each search hit has got an incremental identifier plus several attributes following the same convention as the those mentioned above for the query sequence. 
 ```json lines
     "hits": [
-            {
+        {
             "hit_num": 1,
             "hit_def": "SP:P35858 ALS_HUMAN Insulin-like growth factor-binding protein complex acid labile subunit OS=Homo sapiens OX=9606 GN=IGFALS PE=1 SV=1",
             "hit_db": "SP",
