@@ -206,6 +206,9 @@
           "hit_len": {
             "type": "number"
           },
+          "hit_iter": {
+            "type": "string"
+          },
           "hit_hsps": {
             "$comment": "There can be multiple HSPs (high-scoring segments) per hit sequence",
             "type": "array",
