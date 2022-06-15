@@ -41,6 +41,9 @@
     "query_os": {
       "type": "string"
     },
+    "query_uni_de": {
+      "type": "string"
+    },
     "query_uni_os": {
       "type": "string"
     },
