@@ -32,3 +32,11 @@ def test_validate_fasta36_schema():
     schema = os.path.normpath("sss_schema.json")
     data = os.path.normpath("example_fasta36.json")
     assert validate_schema(schema, data)
+
+
+def test_validate_psiblast_schema():
+    """ Checks whether the given FASTA36 data matches the schema"""
+
+    schema = os.path.normpath("sss_schema.json")
+    data = os.path.normpath("example_psiblast.json")
+    assert validate_schema(schema, data)
