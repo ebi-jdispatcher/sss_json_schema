@@ -74,6 +74,7 @@ The next main required object properties are the `hits` list. Each search hit ha
             "hit_url": "https://www.uniprot.org/uniprot/P35858",
             "hit_os": "Homo sapiens",
             "hit_xref_url": "https://www.ebi.ac.uk/ebisearch/search.ebi?db=uniprot&query=P35858",
+            "hit_dbfetch_url": "https://www.ebi.ac.uk/Tools/dbfetch/dbfetch?style=raw;db=uniprot;id=P35858",
             "hit_uni_de": "Insulin-like growth factor-binding protein complex acid labile subunit",
             "hit_uni_os": "Homo sapiens",
             "hit_uni_ox": "9606",

@@ -155,164 +155,168 @@
       "contains": {
         "type": "object",
         "properties": {
-          "hit_num": {
-            "$comment": "Information about hit sequence",
-            "type": "number"
-          },
-          "hit_def": {
-            "type": "string"
-          },
-          "hit_db": {
-            "type": "string"
-          },
-          "hit_id": {
-            "type": "string"
-          },
-          "hit_acc": {
-            "type": "string"
-          },
-          "hit_desc": {
-            "type": "string"
-          },
-          "hit_url": {
-            "type": "string",
-            "format": "uri"
-          },
-          "hit_os": {
-            "type": "string"
-          },
-          "hit_xref_url": {
-            "type": "string",
-            "format": "uri"
-          },
-          "hit_uni_de": {
-            "type": "string"
-          },
-          "hit_uni_os": {
-            "type": "string"
-          },
-          "hit_uni_ox": {
-            "type": "string"
-          },
-          "hit_uni_gn": {
-            "type": "string"
-          },
-          "hit_uni_pe": {
-            "type": "string"
-          },
-          "hit_uni_sv": {
-            "type": "string"
-          },
-          "hit_seq": {
-            "type": "string"
-          },
-          "hit_len": {
-            "type": "number"
-          },
-          "hit_iter": {
-            "type": "string"
-          },
-          "hit_hsps": {
-            "$comment": "There can be multiple HSPs (high-scoring segments) per hit sequence",
-            "type": "array",
-            "contains": {
-              "type": "object",
-              "properties": {
-                "hsp_num": {
-                  "$comment": "Information to pairwise alignments",
-                  "type": "number"
-                },
-                "hsp_score": {
-                  "type": "number"
-                },
-                "hsp_sw_score": {
-                  "type": "number"
-                },
-                "hsp_initn": {
-                  "type": "number"
-                },
-                "hsp_init1": {
-                  "type": "number"
-                },
-                "hsp_opt": {
-                  "type": "number"
-                },
-                "hsp_zscore": {
-                  "type": "number"
-                },
-                "hsp_bit_score": {
-                  "type": "number"
-                },
-                "hsp_expect": {
-                  "$comment": "Custom EBI scientific notation format",
-                  "type": "number"
-                },
-                "hsp_align_len": {
-                  "type": "number"
-                },
-                "hsp_identity": {
-                  "type": "number"
-                },
-                "hsp_positive": {
-                  "type": "number"
-                },
-                "hsp_gaps": {
-                  "type": "number"
-                },
-                "hsp_query_frame": {
-                  "type": "string"
-                },
-                "hsp_hit_frame": {
-                  "type": "string"
-                },
-                "hsp_strand": {
-                  "type": "string"
-                },
-                "hsp_frame": {
-                  "type": "number"
-                },
-                "hsp_query_from": {
-                  "type": "number"
-                },
-                "hsp_query_to": {
-                  "type": "number"
-                },
-                "hsp_query_display_from": {
-                  "type": "number"
-                },
-                "hsp_hit_from": {
-                  "type": "number"
-                },
-                "hsp_hit_to": {
-                  "type": "number"
-                },
-                "hsp_hit_display_from": {
-                  "type": "number"
-                },
-                "hsp_qseq": {
-                  "$comment": "query, hit and midline sequences",
-                  "type": "string"
-                },
-                "hsp_mseq": {
-                  "type": "string"
-                },
-                "hsp_hseq": {
-                  "type": "string"
+            "hit_num": {
+                "$comment": "Information about hit sequence",
+                "type": "number"
+            },
+            "hit_def": {
+                "type": "string"
+            },
+            "hit_db": {
+                "type": "string"
+            },
+            "hit_id": {
+                "type": "string"
+            },
+            "hit_acc": {
+                "type": "string"
+            },
+            "hit_desc": {
+                "type": "string"
+            },
+            "hit_url": {
+                "type": "string",
+                "format": "uri"
+            },
+            "hit_os": {
+                "type": "string"
+            },
+            "hit_xref_url": {
+                "type": "string",
+                "format": "uri"
+            },
+            "hit_dbfetch_url": {
+                "type": "string",
+                "format": "uri"
+            },
+            "hit_uni_de": {
+                "type": "string"
+            },
+            "hit_uni_os": {
+                "type": "string"
+            },
+            "hit_uni_ox": {
+                "type": "string"
+            },
+            "hit_uni_gn": {
+                "type": "string"
+            },
+            "hit_uni_pe": {
+                "type": "string"
+            },
+            "hit_uni_sv": {
+                "type": "string"
+            },
+            "hit_seq": {
+                "type": "string"
+            },
+            "hit_len": {
+                "type": "number"
+            },
+            "hit_iter": {
+                "type": "string"
+            },
+            "hit_hsps": {
+                "$comment": "There can be multiple HSPs (high-scoring segments) per hit sequence",
+                "type": "array",
+                "contains": {
+                    "type": "object",
+                    "properties": {
+                        "hsp_num": {
+                            "$comment": "Information to pairwise alignments",
+                            "type": "number"
+                        },
+                        "hsp_score": {
+                            "type": "number"
+                        },
+                        "hsp_sw_score": {
+                            "type": "number"
+                        },
+                        "hsp_initn": {
+                            "type": "number"
+                        },
+                        "hsp_init1": {
+                            "type": "number"
+                        },
+                        "hsp_opt": {
+                            "type": "number"
+                        },
+                        "hsp_zscore": {
+                            "type": "number"
+                        },
+                        "hsp_bit_score": {
+                            "type": "number"
+                        },
+                        "hsp_expect": {
+                            "$comment": "Custom EBI scientific notation format",
+                            "type": "number"
+                        },
+                        "hsp_align_len": {
+                            "type": "number"
+                        },
+                        "hsp_identity": {
+                            "type": "number"
+                        },
+                        "hsp_positive": {
+                            "type": "number"
+                        },
+                        "hsp_gaps": {
+                            "type": "number"
+                        },
+                        "hsp_query_frame": {
+                            "type": "string"
+                        },
+                        "hsp_hit_frame": {
+                            "type": "string"
+                        },
+                        "hsp_strand": {
+                            "type": "string"
+                        },
+                        "hsp_frame": {
+                            "type": "number"
+                        },
+                        "hsp_query_from": {
+                            "type": "number"
+                        },
+                        "hsp_query_to": {
+                            "type": "number"
+                        },
+                        "hsp_query_display_from": {
+                            "type": "number"
+                        },
+                        "hsp_hit_from": {
+                            "type": "number"
+                        },
+                        "hsp_hit_to": {
+                            "type": "number"
+                        },
+                        "hsp_hit_display_from": {
+                            "type": "number"
+                        },
+                        "hsp_qseq": {
+                            "$comment": "query, hit and midline sequences",
+                            "type": "string"
+                        },
+                        "hsp_mseq": {
+                            "type": "string"
+                        },
+                        "hsp_hseq": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "hsp_num",
+                        "hsp_score",
+                        "hsp_query_from",
+                        "hsp_query_to",
+                        "hsp_hit_from",
+                        "hsp_hit_to",
+                        "hsp_qseq",
+                        "hsp_mseq",
+                        "hsp_hseq"
+                    ]
                 }
-              },
-              "required": [
-                "hsp_num",
-                "hsp_score",
-                "hsp_query_from",
-                "hsp_query_to",
-                "hsp_hit_from",
-                "hsp_hit_to",
-                "hsp_qseq",
-                "hsp_mseq",
-                "hsp_hseq"
-              ]
             }
-          }
         },
         "required": [
           "hit_num",
@@ -323,6 +327,7 @@
           "hit_desc",
           "hit_url",
           "hit_xref_url",
+          "hit_dbfetch_url",
           "hit_os",
           "hit_len",
           "hit_hsps"
